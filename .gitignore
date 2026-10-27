@@ -1,0 +1,18 @@
+# LaTeX compilation files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# Generated manuscript PDFs
+/paper_2020/latex/main.pdf
+/paper_2027/main.pdf
