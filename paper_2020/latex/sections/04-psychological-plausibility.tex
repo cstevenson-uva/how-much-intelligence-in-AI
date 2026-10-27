@@ -1,0 +1,115 @@
+% Editable transcription; verify reused text against the original PDF.
+\section{Is modern AI (more) psychologically plausible?}
+
+Schank (1980) stated that early AI work [1950's--1970's]
+``did not have a very particular psychological flavor'', where
+questions about how ``people do various tasks... were not of
+particular interest'', although AI researchers were becoming
+increasingly interested in cognition in recent years [late 70's].
+With the impressive development of AI techniques in the past decades,
+we believe that the interest in cognition has only grown.
+Although much can be said about the limitations of current AI methods
+and models, such as the amount of data required to train state-of-the-art
+ANNs and inhuman complexity of some models (such as GPT-3), we see many
+ways in which AI has become more psychologically plausible since the
+time of Schank's, 1980 article.
+We explain this according to David Marr's (1982) three levels of analysis.
+
+\begin{quote}
+\small
+\textbf{Figure 1 (image omitted).}
+Examples of generated images in response to the text prompt
+``an armchair in the shape of an avocado'' by DALL-E.
+Adapted from \url{https://openai.com/blog/dall-e}.
+\end{quote}
+
+In terms of the computational level, the problems modern AI solve
+are much more humanlike than the simple toy problems often used
+in early AI efforts: modern AI is often used, as witnessed by the
+applications introduced before, to solve complex tasks in real-world
+contexts and using real-world data.
+And these real-world modern AI models sometimes achieve
+(super)human performance.
+Although most AI models that achieve (super)human performance are
+constrained to a single, narrow task, the observation that these
+artificial systems perform on par with actual human behavior is
+amazing nonetheless.
+Interestingly, one direction some researchers take to improve the
+performance of their models is to make the task that needs to be
+solved more ``human'', or in other words, to align the computational
+level between artificial systems and humans.
+One characteristic example of this is ``curiosity-based learning'',
+a specific implementation of reinforcement learning models which
+use ``curiosity'' instead of external reward to motivate learning
+(Burda, Edwards, Storkey, \& Klimov, 2018).
+
+Equivalence at the computational level, however, does not necessarily
+mean equivalence at the algorithmic level (i.e., a cognitive wheel).
+In other words, although modern AI and human cognition aim to solve
+similar problems, the way AI and humans implement these solutions
+may differ fundamentally.
+There is, however, reason to be optimistic in this regard, given
+the abundance of studies showing that ANNs and reinforcement
+learning models learn representations and contain mechanisms
+that have plausible neural correlates.
+Especially in the domain of perception, researchers have shown
+that the representations learned by ANNs are similar to stimulus
+representations in the sensory cortex (e.g., Yamins et al., 2014).
+And, importantly, that deeper layers in ANNs contain information
+corresponding to stimulus features represented in brain regions
+further down the sensory processing hierarchy
+(Güçlü \& van Gerven, 2015).
+Indeed, at the moment, features from deep neural networks are better
+able to explain neural activity during naturalistic vision than
+features from classical computational models of the visual cortex
+(Khaligh-Razavi \& Kriegeskorte, 2014; Schrimpf et al., 2018).
+In addition to ANNs, (deep) reinforcement learning models appear
+to have plausible neural correlations, such as the correspondence
+of parameters from the temporal difference learning model with
+midbrain dopamine activity during animal and human learning
+(Schultz, Dayan, \& Montague, 1997; for a review on the correspondence
+between reinforcement learning models and the brain, see
+O'Doherty, Lee, \& McNamee, 2015).
+This correspondence between artificial and biological representations
+is further supported by the fact that many AI models, once they are
+trained, can often be successfully applied to other tasks and
+(perceptual) domains with minimal or no retraining---a technique
+called transfer learning (Torrey \& Shavlik, 2010).
+The success of transfer learning
+(Yosinski, Clune, Bengio, \& Lipson, 2014), which includes the
+aforementioned reuse of ANNs in deep reinforcement learning
+(Botvinick, Wang, Dabney, Miller, \& Kurth-Nelson, 2020) and deep
+language models (Lu, Grover, Abbeel, \& Mordatch, 2021), thus shows
+that AI systems can learn generalizable representations,
+just like the brain.
+
+Another development that points to AI becoming more human at the
+algorithmic level is that researchers started to incorporate concepts
+and ideas from psychology and cognitive science in their AI systems.
+For example, researchers have shown that implementing an artificial
+version of ``attention'' in both language models
+(Vaswani et al., 2017) and vision models
+(Linsley, Shiebler, Eberhardt, \& Serre, 2018; Xu et al., 2015)
+improves their performance (see for a comprehensive review
+Lindsay, 2020), which mirrors recent developments in intelligence
+research that highlight the role of attention and attentional control
+in human intelligence (e.g., Burgoyne \& Engle, 2020).
+
+A similar example in the domain of reinforcement learning is the
+implementation of ``episodic memory'' and meta-learning
+(``learning to learn'') in artificial reinforcement learning models,
+which has been shown to dramatically improve the speed and efficiency
+when training these models (Botvinick et al., 2019; Wang, 2021).
+Psychologically-infused reinforcement models also appear to have
+plausible neural correlations (Wang et al., 2018).
+
+Finally, even though early ANN models were in fact abstractions from
+biological neurons and networks, modern AI models are much more human
+and brain-like at the implementational level.
+Like the brain, modern AI models often feature hierarchical processing
+streams that contain a large set of parameters that match the
+complexity of the human brain.
+These developments include hierarchical layers, convolutions,
+synaptic pruning (Blalock, Ortiz, Frankle, \& Guttag, 2020), and
+recurrence---all of which have plausible equivalents in the human
+brain (Kriegeskorte, 2015).

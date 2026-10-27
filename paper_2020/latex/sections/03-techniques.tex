@@ -1,0 +1,228 @@
+% Editable transcription; verify reused text against the original PDF.
+\section{Modern AI techniques}
+
+At the heart of the progress in AI lies the development of novel
+techniques and algorithms commonly known as ``artificial neural
+networks''.
+In the late 20th century, ANNs started to become the model of choice
+in many AI domains and are currently used in most modern AI applications.
+Because of their importance in modern AI, we discuss their origin and
+subsequent development, which shows a long history of mutual interaction
+between and inspiration from psychology, neuroscience, and (artificial)
+intelligence research.
+Then, we discuss (artificial) reinforcement learning and other techniques
+that are common in modern AI.
+
+\subsection{Artificial neural networks}
+
+Nowadays, many applications using artificial intelligence are powered,
+at least partly, by (deep) artificial neural networks (ANNs).
+ANNs come in many different varieties, but they all are composed of a
+collection of largely identical processing ``units'' structured in a
+hierarchical fashion, not unlike the way biological neurons make up
+biological neural pathways.
+In fact, psychology and neuroscience had, and still have, a strong
+influence on the development of ANNs.
+
+As their name suggests, the development of ANNs in the 1950s was
+originally inspired by the structure and function of biological neurons
+and networks (McCulloch \& Pitts, 1943).
+The goal was to model cognition using models that stayed true to what,
+at the time, was known about brain processing.
+This approach, sometimes called ``connectionism'', is complementary
+to the more symbolic approaches to artificial intelligence advocated
+by, among others, the psychologists Alan Newell and Herbert Simon
+(e.g. Newell \& Simon, 1956).
+
+Initially, ANN models were composed of small arrays of artificial
+neurons with a single input layer and one output layer, such as the
+famous Perceptron model (Rosenblatt, 1958).
+These models were often used to demonstrate that they can learn simple
+logical functions (like the AND function) and embeddings (such as
+recoding decimals to binary numbers).
+Importantly, instead of explicitly programming the parameters
+(or ``rules'') of the models (as was common in symbolic artificial
+intelligence), the parameters (or ``weights'') of these networks
+were learned.
+
+After a period of reduced interest in and general pessimism about the
+potential of artificial intelligence in general and ANNs in specific
+(known as the first ``AI winter''), ANNs regained their popularity
+when datasets and computing power increased throughout the first
+decade of the 21st century.
+Massive datasets, such as ImageNet (Deng et al. 2009), and the
+technological developments that allowed networks to be trained on
+powerful graphical cards allowed researchers to develop more complex
+models, which often manifested as networks with many hidden layers
+(i.e. deep neural networks; LeCun, Bengio, \& Hinton, 2015).
+Also, a particular variant of ANNs, convolutional neural networks
+(CNNs), were developed specifically to take advantage of locally
+structured data (such as images and audio) by rectangular sets of
+parameters, called filters, that were learned.
+This made it unnecessary to carefully handcraft filters (as was common
+in computer vision at the time).
+CNNs proved to be extraordinarily powerful on visual tasks such as
+object recognition, which was convincingly demonstrated when a CNN
+beat the then state-of-the-art object recognition model during the
+2012 ImageNet Large Scale Visual Recognition Challenge
+(Krizhevsky, Sutskever \& Hinton, 2012).
+
+Since 2012, research into ANNs has exploded, fueled both by a wider
+interest from the AI community as well as the adaptation of ANNs
+in different academic domains.
+The general trend has been to develop more complex architectures
+with more layers, often referred to as deep learning.
+Extreme examples are the winning network from the ImageNet
+competition in 2015, which featured over 150 hidden layers
+(He, Zhang, Ren, \& Sun, 2016) and the aforementioned GPT-3 language
+model featuring 96 layers and 175 billion parameters.
+Apart from (computer) vision, ANNs have been adopted by other
+scientific domains, including neuroscience
+(Marblestone, Wayne, \& Kording, 2016), biology and medicine
+(Ching et al. 2018), genomics (Zou et al. 2019), and geoscience
+(Zhang, Zhang, \& Du, 2016).
+Common to these applications is that (deep) neural networks are used
+to estimate a (very) nonlinear mapping from a set of inputs to a set
+of outputs.
+
+The idea of stacking computations, as in the hierarchical layering
+of (deep) ANNs, has been integrated in other AI domains such as
+reinforcement learning and natural language processing (NLP).
+This has given rise to deep reinforcement learning, used in the
+previously mentioned AlphaZero model, and deep-learning-based NLP
+models, such as the aforementioned GPT-3 model.
+In these layered models, ANNs are used as a separate ``perceptual
+module'' (which may or may not be pre-trained) that embeds information,
+such as images or speech, in a way that a reinforcement learning
+model or a language model can use the ANN as a basis.
+Importantly, although reinforcement learning models may use ANNs
+as part of their model architecture, they are fundamentally different
+from ANNs in terms of goal.
+Because of this, and because artificial reinforcement learning also
+has roots in psychology and neuroscience, we now discuss this class
+of models in more detail.
+
+\subsection{Reinforcement learning}
+
+Artificial reinforcement learning models learn optimal behavior
+in a given context, through experience.
+In contrast to ANNs, which tend to excel at perceptual tasks,
+reinforcement learning is used to make an artificial agent learn
+to behave.
+Unsurprisingly, much of the progress in artificial reinforcement
+learning was inspired by and used concepts from animal and human
+learning (Sutton \& Barto, 1998, see chapter 11).
+Early artificial reinforcement learning models, which did not feature
+ANN modules, directly adapted or extended models from animal learning.
+For example, the extended Rescorla-Wagner classical conditional model
+(Rescorla \& Wagner, 1972), called temporal difference learning
+(Sutton \& Barto, 1987), is extensively used in both psychology
+(e.g. Gershman, Pesaran, \& Daw, 2009), neuroscience
+(Neftci \& Averbeck, 2019) and AI research
+(e.g. deep Q learning; Mnih et al. 2015).
+
+These early reinforcement learning models were often evaluated
+on relatively simple problems using a relatively simple environment
+(i.e. with few ``states'') and a restricted and discrete set of possible
+behaviors (i.e. with few ``actions'').
+Examples of such ``toy problems'' are navigating a maze (in animal
+learning) or learning to choose the most rewarding (virtual) slot
+machine (in artificial reinforcement learning).
+Driven by the desire to scale up reinforcement learning models
+to complex environments and behaviors, 21st century researchers
+started to add ANNs to their reinforcement learning models.
+In these models, ANNs function as a preprocessing step that embeds
+a complex (possibly continuous) environment as a more tractable set
+of representations that can be fed into the reinforcement learning
+model.
+By adding ANNs researchers could scale up reinforcement learning
+models that in turn led to the development of systems capable of
+(super) human performance on a range of tasks, including playing
+board games (Silver et al. 2018) and video games (Mnih et al. 2015),
+as well as autonomous driving (Kiran et al. 2020).
+
+\subsection{Other techniques}
+
+ANNs and reinforcement learning are arguably the dominant techniques
+used in modern AI models, but far from the only ones.
+Here, we briefly discuss two other important techniques:
+generative modelling and Bayesian models.
+
+Within artificial intelligence, generative modelling is a broad set
+of models that are in fact (often) a specific implementation of a
+neural network.
+The difference with ``standard'' neural networks is that generative
+neural networks try to learn the distribution of the data (X) given
+a particular feature (y), p(X \textbar{} y), in contrast to standard
+(or ``discriminative'') neural networks that try to predict a
+particular feature given the data, p(y \textbar{} X).
+For example, instead of predicting object category (y) from images
+(X), a corresponding generative model could try to learn what a
+particular image (X) of a particular object (y) would look like.
+For example, researchers trained a generative model on images of
+faces using a generative adversarial network
+(GAN; e.g. Karras, Aila, Laine, \& Lehtinen, 2017) and were then able
+to generate photorealistic images of faces of non-existent people
+(convincingly demonstrated on
+\url{https://thispersondoesnotexist.com}).
+Generative models have also been successfully applied in NLP,
+with the recent GPT-3 model as a striking example
+(Brown et al. 2020), and across domains, such as the text-to-image
+model DALL-E, which is able to create images from text descriptions
+(see Fig. 1).
+
+Bayesian modelling (or Bayesian reasoning) is another technique
+worth mentioning.
+Although Bayesian techniques are used more in psychology than in AI,
+many have argued that Bayesian modelling is crucial to overcoming
+the current limitations of AI
+(Lake, Ullman, Tenenbaum, \& Gershman, 2017;
+Marcus, 2018; Pearl, 2019).
+What's more, the abstract problem domains that Bayesian models are
+often applied to are much closer to the problems presented in human
+intelligence tests than those presented to ANNs.
+
+Bayesian models come in many forms, but their common denominator
+is that they aim to formalize interpretable and generalizable
+mechanisms and knowledge.
+In contrast to most ANNs, which are trained on a very specific task
+(e.g. object recognition) and often need massive amounts of data,
+Bayesian models are designed to learn generalizable mechanisms
+that need little data to train
+(Tenenbaum, Kemp, Griffiths, \& Goodman, 2011).
+In a way, this approach resembles symbolic AI, with the major
+difference being that modern Bayesian techniques are able to handle
+more complex data and models.
+To achieve models that can better generalize across domains
+(``far transfer''), Bayesian models stress the importance of
+abstract knowledge, functioning as priors in the Bayesian framework,
+that constrain their structure and learning process.
+A well-known application of Bayesian modelling is in the realm
+of intuitive physics
+(e.g. Battaglia, Hamrick, \& Tenenbaum, 2013).
+Here, Bayesian models are used to model how humans (learn to)
+understand the physical world and its physical laws in a causal way.
+While Bayesian modelling is still mostly confined to realm of
+psychology, many have advocated integrating ``connectionism''
+(represented by ANN modelling) and ``symbolic AI'' (represented by
+symbolic/Bayesian models; Lake et al. 2017; Marcus, 2018), and initial
+efforts have produced some promising results
+(Mao, Gan, Kohli, Tenenbaum, \& Wu, 2019; Yi et al. 2018).
+The field of intelligence also sees a renewed interest in cognitive
+modelling (e.g. Frischkorn \& Schubert, 2018), which may provide
+new links between AI and intelligence research.
+
+To summarize, modern AI relies on a set of techniques that are able
+to solve complex tasks.
+ANNs are extraordinarily effective in the context of perceptual
+tasks (such as object and speech recognition), but are increasingly
+used as modules in other applications as well, for example by
+combining them with reinforcement learning and NLP models.
+Whereas ANNs are particularly suited to model perceptual processes,
+reinforcement learning represents a set of techniques that are very
+effective in terms of learning adaptive behavior and can outperform
+humans at a variety of tasks (including board and video games).
+In addition, generative modelling complements techniques for
+prediction by generating data, and Bayesian reasoning may provide
+AI with models that alleviate AI of its current shortcomings such
+as limited generalizability and data-intensive training regimes.

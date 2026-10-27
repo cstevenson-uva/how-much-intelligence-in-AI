@@ -1,0 +1,221 @@
+% Editable transcription; verify reused text against the original PDF.
+\section{Is AI intelligent?}
+
+Although these recent breakthroughs are very impressive and based on
+methods with parallels in the human brain, the question whether such
+systems display real intelligence remains relevant.
+
+On this, opinions are divided.
+As said, AI already outperforms humans in several areas.
+In other areas, more computation power, a combination of existing
+techniques and new techniques that are under development now, may
+lead to similar levels of (super)human performance.
+According to Newell and Simon's (2007) physical symbol system
+hypothesis, there is no principal reason why an extrapolation of
+recent advances in AI should not lead to true intelligence.
+
+Yet, the general assessment of how intelligent AI really is, and how
+much it still differs from human intelligence, is contradictory,
+at best.
+On the one hand, cognitive psychologists and neuroscientists generally
+acknowledge the merits of modern AI methods (Naselaris et al., 2018),
+especially in the context of perception (VanRullen, 2017) and language
+(Henderson, 2020).
+On the other hand, others argue that previous critiques of early AI
+systems---including the famous arguments by Searle (1980),
+Dreyfus (1965), and Penrose (1994)---still hold for modern AI systems.
+Common to these critiques is that AI systems lack understanding.
+
+Chess again helps to illustrate the problem.
+In certain so-called ``anticomputer positions'' (such as the
+impenetrable fortress of pieces shown in Fig. 2), human chess players
+quickly see the point of the position, while AI systems are only able
+to evaluate the position after considering long sequences of moves.
+For example, the Leela Chess Zero engine has a difficult time with
+this kind of position.
+Humans somehow have the ability to use both general reasoning and
+automatic pattern recognition when playing chess, which suggests
+that the critique about lack of understanding is still relevant.
+
+In the case of chess, the ``lack of understanding'' limitation is
+perhaps temporary.
+Leela chess might, in time, learn to understand ``anti-computer
+positions'', where perhaps a modular approach in which Leela chess
+is combined with a symbolic or Bayesian approach might work.
+But this clearly would not end the debate.
+According to Searle, Dreyfus and others, the problem lies deeper.
+AI systems lack semantics, feelings, a body and goals.
+Some of these limitations can perhaps be overcome by using robots
+that do have a body or real time interactions with the actual
+(rather than digital, simulated) world, which is often thought
+to be necessary to grasp causality---an element that is sorely
+absent from most AI systems
+(Lake et al., 2017; Tenenbaum et al., 2011).
+
+\begin{quote}
+\small
+\textbf{Figure 2 (image omitted).}
+A typical anti-computer position.
+Human chess players quickly see that black, in spite of its material
+advantage, can not make progress.
+The best computer chess programs assess the position as much
+better for black.
+\end{quote}
+
+So how should we assess the ``lack of understanding'' issue from
+the intelligence researcher's point of view?
+We will answer this with two definitions of intelligence in mind.
+The first is a practical definition: intelligence is what the
+intelligence test measures.
+This definition is not taken very seriously
+(however, see van der Maas, Kan, \& Borsboom, 2014), but how well AI
+performs on human intelligence tests provides an interesting insight
+into the limitations of AI nonetheless
+(which is discussed in the next section).
+
+In the most commonly accepted definitions of intelligence, we see
+two important requirements.
+One is the ability to deal with various forms of information and
+to solve all kinds of cognitive problems, and the other is the ability
+to both quickly and effectively learn how to deal with new situations
+(Legg \& Hutter, 2007).
+
+AI clearly meets the first requirement, as there is arguably nothing
+wrong with AI's crystallized intelligence: AI programs can play games
+like go and chess, compose music, create art, solve complex math
+problems, provide medical diagnosis, etc.
+But things are different when we confront a trained AI system with
+completely novel situations.
+Schank (1980) already mentioned the problem of generalizability.
+Humans are able to transfer solutions from one problem domain
+to another, apply general, abstract concepts (such as presented
+in ``anticomputer problems'' in chess) in reasoning and to develop
+solutions for completely new problems.
+AI, on the other hand, often fails to learn such abstract rules and
+if they do, it requires an immense amount of training examples
+(Lake et al., 2017).
+
+We think it is justified to say that generalization is still a
+weakness of AI systems.
+At the same time, we see many promising developments.
+We already mentioned transfer learning, which works by virtue of
+learning general representations that facilitate broad generalization.
+Multitask learning is an active area of research (Ruder, 2017).
+Ongoing attempts to integrate deep learning and symbolic AI or
+Bayesian reasoning may also be crucial for progress in this
+research area.
+New work on one-shot learning
+(Vinyals, Blundell, Lillicrap, Kavukcuoglu, \& Wierstra, 2016)
+may also lead to breakthroughs.
+
+Whether these future developments also make AI systems `understand'
+things like we do is a topic of hot philosophical debate
+(for further discussion we refer to Cole, 2020).
+
+\subsection{How well do AI systems perform on intelligence tests?}
+
+Newell (1973) argued that if a single AI system could solve a diverse
+set of intelligence test problems, then we could consider it to be
+intelligent.
+Since the 1960's there have been waves of efforts to have AI systems
+solve intelligence test problems.
+This started with Evan's (1964) ANALOGY program that could solve
+geometric analogies from the WAIS and was intended to be able
+to generalize to other reasoning tasks (but not pursued).
+In Hernández-Orallo, Martínez-Plumed, Schmid, Siebers, and Dowe's
+(2016) review we see that AI has tackled a broad range of intelligence
+subtests, ranging from letter and number series to block design and
+exclusion tasks, and without a doubt excels at what are considered
+tests of crystallized intelligence (e.g., math, vocabulary) and
+processing capacity (e.g., memory, speed).
+The one test that has continually popped up in the literature
+over the years is Raven's Progressive Matrices (RPM).
+AI programs have been used to study how people solve the RPM
+(Carpenter, Just, \& Shell, 1990; Lovett \& Forbus, 2012) to fully
+independent programs that take raw images as input and induce rules
+and select the correct option
+(Correa, Prade, \& Richard, 2012; Kunda, McGregor, \& Goel, 2013)
+or even generate it (Pekar, Benny, \& Wolf, 2020), in many cases
+reaching human level performance.
+
+An especially interesting case is that of Bongard problems
+(Bongard, 1967 in Hofstadter, 1979).
+In Fig. 3 you see a simple Bongard problem where the test-taker has
+to induce which pattern the images on the left follow and those
+on the right do not.
+Hofstadter (1979) considered these types of reasoning tasks to lie
+at the core of human intelligence.
+His PhD student Foundalis (2006) created Phaeaco, a
+(by today's standards) rudimentary AI system, to try to solve
+Bongard problems.
+Phaeco contains a cognitive architecture with modules to process
+the images, match visual patterns, learn, and to store and retrieve
+learned patterns.
+Phaeco was relatively successful, although the program did not reach
+human level performance.
+More recently, Nie et al. (2020) tried to solve Bongard problems
+using state-of-the-art deep learning methods.
+Their best model achieved 66\% accuracy, and yet performance still
+falls behind that of humans who are able to solve about 90\% of
+their Bongard benchmark problems.
+
+So, although in many cases intelligence tests can be solved by AI
+programs, most of these are specialized programs that can only solve
+one particular task.
+Some attempts have been made to create more general AI systems.
+For example, in Nie et al.'s (2020) study one of the models they used
+to solve Bongard problems was built upon one of the most successful
+Raven-like item solvers
+(Barrett, Hill, Santoro, Morcos, \& Lillicrap, 2018), alas this model
+performed only around the level of chance.
+So currently, we cannot say that AI is ``intelligent'' by the
+psychometric definition in the sense of being able to achieve human
+level performance on all subtests of an intelligence test using
+one general AI system.
+
+But, what if we approach this question from the other side:
+How well do humans perform on tests of intelligence for AI?
+Over the AI lifespan, an interesting field has emerged that takes
+the psychometric approach to assessing general intelligence in AI,
+but then applied to problems generated specifically for AI research
+(e.g., Bringsjord \& Schimanski, 2003; Chollet, 2019;
+Evans, 1964; Hernández-Orallo et al., 2016).
+This approach is characterized by hundreds or thousands of
+(often computer generated) items fit for a non-verbal test of
+intelligence (Barrett et al., 2018; Chollet, 2019;
+Liu et al., 2019; Nie et al., 2020;
+Zhang, Gao, Jia, Zhu, \& Zhu, 2019).
+These item banks are referred to as benchmarks and used to objectively
+compare the performance of different AI systems, and, in some cases,
+also compare AI performance to that of humans.
+There is a clear role for Intelligence researchers in this field
+given our expertise in test development, sampling from the general
+population and in assessing human performance.
+There is also a role for AI in improving existing measures of human
+intelligence (e.g., automatic item generation;
+Gierl \& Haladyna, 2012).
+For AI, currently more intelligence test benchmarks are needed
+(e.g., for problem analogies, Ichien, Lu, \& Holyoak, 2020).
+Also, these benchmarks only sometimes include humans among their
+comparison samples, which appear limited to adults
+(Nie et al., 2020) or only a few experts (Chollet, 2019).
+Unsurprisingly, at this point in time humans generally outperform
+AI systems on these types of AI ``fluid'' intelligence tests
+(e.g., Chollet, 2019; Nie et al., 2020).
+Given the activity in the field, perhaps many strides will be made
+in the coming years to achieve human-like performance on these
+benchmarks, but also psychology can inspire innovation in AI by
+providing a developmental account of if and how humans learn
+to solve these AI benchmarks.
+
+\begin{quote}
+\small
+\textbf{Figure 3 (image omitted).}
+Bongard visual pattern recognition problem, where the test-taker
+has to induce which pattern the images on the left follow and those
+on the right do not.
+In this example, the images on the left are convex and those on
+the right are concave.
+From
+\url{https://upload.wikimedia.org/wiki/commons/thumb/e/e9/BongardProblem_convex_poligons.svg}.
+\end{quote}
